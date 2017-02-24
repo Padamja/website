@@ -14,6 +14,9 @@ If you are not a member of the team but still want to contribute, you must first
 This website is an Django app with Postgres used as a database. You can run the website by two ways.
 
 1) To activate the virtualenv which is present in the repository. Make sure you are in the repository and run the following command.
+
     `website$ source virtualenv/bin/activate`
+
 This will activate the virtualenv present. Then you need to run
+
     `website$ python manage.py runserver`
