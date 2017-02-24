@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> QuarkMe | Register </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/smart-forms.css">
+    <link rel="stylesheet" type="text/css" href="css/smart-themes/green.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <script src="jquery-1.9.1.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAP--5OxLC0Faa8m4eKv8MUeRZslfV3Hm8&libraries=places"></script>
+
+
+
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/additional-methods.min.js"></script>
+
+    <!--[if lte IE 9]>   
+        <script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+    <![endif]-->
+
+    <!--[if lte IE 8]>
+        <link type="text/css" rel="stylesheet" href="css/smart-forms-ie8.css">
+    <![endif]-->
+
+    <script type="text/javascript">
+        $(function() {
+
+            /* @custom validation method (smartCaptcha) 
+				------------------------------------------------------------------ */
+
+            $.validator.methods.smartCaptcha = function(value, element, param) {
+                return value == param;
+            };
+
+            $("#account").validate({
+
+                /* @validation states + elements 
+						------------------------------------------- */
+
+                errorClass: "state-error",
+                validClass: "state-success",
+                errorElement: "em",
+
+                /* @validation rules 
+						------------------------------------------ */
+
+                rules: {
+                    firstname: {
+                        required: true
+                    },
+                    lastname: {
+                        required: true
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+
+                    month: {
+                        required: true
+                    },
+
+                    qual: {
+                        required: true
+                    },
+                    upload1: {
+                        required: true,
+                        extension: "jpg|png|gif|jpeg|doc|docx|pdf|xls|rar|zip"
+                    },
+
+                    comment: {
+                        required: true,
+                        minlength: 15
+                    },
+                    mobile: {
+                        required: true,
+                        minlength: 10
+                    },
+
+                    password: {
+                        required: true,
+                        minlength: 6,
+                        maxlength: 16
+                    },
+                    repeatPassword: {
+                        required: true,
+                        minlength: 6,
+                        maxlength: 16,
+                        equalTo: '#password'
+                    },
+                    gender: {
+                        required: true
+                    },
+                    experience: {
+                        required: true
+                    },
+                    verification: {
+                        required: true,
+
+                    },
+                    disabled: {
+                        required: true
+                    },
+                    language: {
+                        required: true
+                    },
+                    day: {
+                        required: true
+                    },
+                    year: {
+                        required: true
+                    },
+                    username: {
+                        required: true
+                    },
+                    licence_no: {
+                        required: function(element) {
+                            return $("#applicant_age").val() > 19;
+                        }
+                    },
+                    child_name: {
+                        required: "#parents:checked"
+                    }
+
+                },
+
+                /* @validation error messages 
+						---------------------------------------------- */
+
+                messages: {
+                    firstname: {
+                        required: 'Enter first name'
+                    },
+                    lastname: {
+                        required: 'Enter last name'
+                    },
+                    email: {
+                        required: 'Enter email address',
+                        email: 'Enter a VALID email address'
+                    },
+                    website: {
+                        required: 'Enter your website URL',
+                        url: 'URL should start with - http://www'
+                    },
+                    qual: {
+                        required: 'Choose your qualifications'
+                    },
+                    language: {
+                        required: 'Please choose your language'
+
+                    },
+                    day: {
+                        required: 'Please enter the date'
+                    },
+                    comment: {
+                        required: 'Oops you forgot to write here',
+                        minlength: 'Enter at least 30 characters or more'
+                    },
+                    mobile: {
+                        require_from_group: 'Fill in the mobile number.'
+                    },
+                    disabled: {
+                        require_from_group: 'Fill at least a home contact'
+                    },
+                    password: {
+                        required: 'Please enter a password'
+                    },
+                    repeatPassword: {
+                        required: 'Please repeat the above password',
+                        equalTo: 'Password mismatch detected'
+                    },
+                    gender: {
+                        required: 'Please choose a gender'
+                    },
+                    username: {
+                        required: 'Select a username'
+                    },
+
+                    year: {
+                        required: 'Enter the year',
+
+                    },
+
+                    month: {
+                        required: 'Select a month'
+                    },
+                    experince: {
+                        required: 'Please select yes or no.'
+                    },
+                    verification: {
+                        required: 'Please accept our TOS.'
+                    }
+
+                },
+
+                /* @validation highlighting + error placement  
+						---------------------------------------------------- */
+
+                highlight: function(element, errorClass, validClass) {
+                    $(element).closest('.field').addClass(errorClass).removeClass(validClass);
+                },
+                unhighlight: function(element, errorClass, validClass) {
+                    $(element).closest('.field').removeClass(errorClass).addClass(validClass);
+                },
+                errorPlacement: function(error, element) {
+                    if (element.is(":radio") || element.is(":checkbox")) {
+                        element.closest('.option-group').after(error);
+                    } else {
+                        error.insertAfter(element.parent());
+                    }
+                }
+
+            });
+
+        });
+    </script>
+
+
+
+
+    <!--[if lte IE 9]>
+    	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>    
+        <script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+    <![endif]-->
+
+    <!--[if lte IE 8]>
+        <link type="text/css" rel="stylesheet" href="css/smart-forms-ie8.css">
+    <![endif]-->
+
+</head>
+
+<body class="woodbg">
+
+    <div class="smart-wrap">
+        <div class="smart-forms smart-container wrap-3">
+
+            <div class="form-header header-green">
+                <h4><i class="fa fa-pencil-square"></i>Become a student @ QuarkMe</h4>
+            </div>
+
+
+            <form method="post" action="http://quarkme.com/register-student" id="account">
+                <div class="form-body theme-green">
+
+                    <p> Hey! </br> To learn with us, just fill out this form. </p>
+                    <label for="names" class="field-label">Your name</label>
+                    <div class="frm-row">
+
+                        <div class="section colm colm6">
+                            <label class="field prepend-icon">
+                                <input type="text" name="firstname" id="firstname" class="gui-input" placeholder="First name...">
+                                <span class="field-icon"><i class="fa fa-user"></i></span>
+                            </label>
+                        </div>
+
+
+                        <div class="section colm colm6">
+                            <label class="field prepend-icon">
+                                <input type="text" name="lastname" id="lastname" class="gui-input" placeholder="Last name...">
+                                <span class="field-icon"><i class="fa fa-user"></i></span>
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <div class="section">
+                        <label for="password" class="field-label">Create a password</label>
+                        <label class="field prepend-icon">
+                            <input type="password" name="password" id="password" class="gui-input">
+                            <span class="field-icon"><i class="fa fa-lock"></i></span>
+                        </label>
+                    </div>
+
+                    <div class="section">
+                        <label for="repeatPassword" class="field-label">Confirm your password</label>
+                        <label class="field prepend-icon">
+                            <input type="password" name="repeatPassword" id="repeatPassword" class="gui-input">
+                            <span class="field-icon"><i class="fa fa-unlock-alt"></i></span>
+                        </label>
+                    </div>
+
+
+                    <div class="section">
+                        <label for="email" class="field-label">Your email address</label>
+                        <label class="field prepend-icon">
+                            <input type="email" name="email" id="email" class="gui-input" placeholder="example@domain.com...">
+                            <span class="field-icon"><i class="fa fa-envelope"></i></span>
+                        </label>
+                    </div>
+
+                    <div class="section">
+                    <label for="comment" class="field-label">Area/Locality, City
+                            </label>
+                            <label class="field prepend-icon">
+
+                                <textarea class="gui-textarea" id="Details" name="Details" placeholder="Text area"></textarea>
+                                <span class="field-icon"><i class="fa fa-comments"></i></span>
+                                
+                            </label>
+                            </div>
+
+
+                     <div class="section">
+                    <label for="phonenumber" class="field-label"> Phone Number
+                            </label>
+                            <label class="field prepend-icon">
+
+                                <input type="tel" name="phonenumber" id="phonenumber" class="gui-input">
+                                <span class="field-icon"><i class="fa fa-comments"></i></span>
+                                
+                            </label>
+
+                     </div>
+                    <div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false"></div>
+                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                    <style>
+                        #map {
+                            height: 100%;
+                        }
+                    </style>
+                    <style>
+                        #locationField,
+                        #controls {
+                            position: relative;
+                            width: 385x;
+                        }
+                        #autocomplete {
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            width: 99%;
+                        }
+                        .label {
+                            text-align: right;
+                            font-weight: bold;
+                            width: 100px;
+                            color: #303030;
+                        }
+                        #address {
+                            border: 1px solid #000090;
+                            background-color: #f0f0ff;
+                            width: 380px;
+                            padding-right: 2px;
+                        }
+                        #address td {
+                            font-size: 10pt;
+                        }
+                        .field {
+                            width: 99%;
+                        }
+                        .slimField {
+                            width: 80px;
+                        }
+                        .wideField {
+                            width: 50px;
+                        }
+                        #locationField {
+                            height: 20px;
+                            margin-bottom: 2px;
+                        }
+                    </style>
+
+                    </br>
+                    </br>
+
+                    
+                    <div class="section">
+
+                        <label for="verify" class="field-label">Prove you're not a robot - </label>
+                        </br>
+
+
+
+                        <div class="g-recaptcha" data-sitekey="6LeMjBAUAAAAAGP3fPcb0CHO3eiQKd8XajY_i-F6"></div>
+
+                    </div>
+
+
+                    <div class="section">
+                        <div class="option-group field">
+                            <label class="option option-green">
+                                <input type="checkbox" name="verification">
+                                <span class="checkbox"></span> Agree to our <a class="various" data-fancybox-type="iframe" href="t&c.html"> terms of service </a>
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="form-footer">
+                    <button type="submit" class="button btn-green">Create Account</button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <script src="conditionize.jquery.js"></script>
+    <script>
+        $('.conditional').conditionize();
+    </script>
+</body>
+
+</html>
