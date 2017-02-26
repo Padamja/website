@@ -1,33 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-
-
 <head>
     <title>QuarkMe | Home</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- LIBRARY FONT-->
+    {% load staticfiles %}
     <link type="text/css" rel="stylesheet" href="../../fonts.googleapis.com/css5a17.css?family=Lato:400,400italic,700,900,300">
-    <link type="text/css" rel="stylesheet" href="assets/font/font-icon/font-awesome-4.4.0/css/font-awesome.css">
-    <link type="text/css" rel="stylesheet" href="assets/font/font-icon/font-svg/css/Glyphter.css">
+    <link type="text/css" rel="stylesheet" href="{% static 'font/font-icon/font-awesome-4.4.0/css/font-awesome.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'font/font-icon/font-svg/css/Glyphter.css' %}">
     <!-- LIBRARY CSS-->
-    <link type="text/css" rel="stylesheet" href="assets/libs/animate/animate.css">
-    <link type="text/css" rel="stylesheet" href="assets/libs/bootstrap-3.3.5/css/bootstrap.css">
-    <link type="text/css" rel="stylesheet" href="assets/libs/owl-carousel-2.0/assets/owl.carousel.css">
-    <link type="text/css" rel="stylesheet" href="assets/libs/selectbox/css/jquery.selectbox.css">
-    <link type="text/css" rel="stylesheet" href="assets/libs/fancybox/css/jquery.fancybox.css">
-    <link type="text/css" rel="stylesheet" href="assets/libs/fancybox/css/jquery.fancybox-buttons.css">
-    <link type="text/css" rel="stylesheet" href="assets/libs/media-element/build/mediaelementplayer.min.css">
+    <link type="text/css" rel="stylesheet" href="{% static 'libs/animate/animate.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'libs/bootstrap-3.3.5/css/bootstrap.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'libs/owl-carousel-2.0/assets/owl.carousel.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'libs/selectbox/css/jquery.selectbox.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'libs/fancybox/css/jquery.fancybox.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'libs/fancybox/css/jquery.fancybox-buttons.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'libs/media-element/build/mediaelementplayer.min.css' %}">
     <!-- STYLE CSS    -->
-    <!--link(type="text/css", rel='stylesheet', href='assets/css/color-1.css', id="color-skins")-->
+    <!--link(type="text/css", rel='stylesheet', href='{% static "css/color-1.css" %}', id="color-skins")-->
     <link type="text/css" rel="stylesheet" href="#" id="color-skins">
-    <script src="assets/libs/jquery/jquery-2.1.4.min.js"></script>
-    <script src="assets/libs/js-cookie/js.cookie.js"></script>
+    <script src="{% static 'libs/jquery/jquery-2.1.4.min.js' %}"></script>
+    <script src="{% static 'libs/js-cookie/js.cookie.js' %}"></script>
     <script>
         if ((Cookies.get('color-skin') != undefined) && (Cookies.get('color-skin') != 'color-1')) {
-            $('#color-skins').attr('href', 'assets/css/' + Cookies.get('color-skin') + '.css');
+            $('#color-skins').attr('href', '{% static "css/" %}' + Cookies.get('color-skin') + '.css');
         } else if ((Cookies.get('color-skin') == undefined) || (Cookies.get('color-skin') == 'color-1')) {
-            $('#color-skins').attr('href', 'assets/css/color-1.css');
+            $('#color-skins').attr('href', "{% static 'css/color-1.css' %}");
         }
     </script>
 
@@ -47,7 +44,7 @@
             <div class="container">
                 <div class="header-main-wrapper">
                     <div class="navbar-heade">
-                        <!---<div class="logo pull-left"><a href="index.html" class="header-logo"><img src="assets/images/logo-color-1.png" alt=""/></a></div> !-->
+                        <!---<div class="logo pull-left"><a href="index.html" class="header-logo"><img src="{% static 'images/logo-color-1.png' %}" alt=""/></a></div> !-->
                         <button type="button" data-toggle="collapse" data-target=".navigation" class="navbar-toggle edugate-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
                         </button>
                     </div>
@@ -385,8 +382,9 @@
                             <div class="btn-next"><i class="fa fa-angle-right"></i></div>
                         </div>
                     </div>
-                </div> !--
-                <!-- WHY CHOOSE US-->
+                </div> 
+                < WHY CHOOSE US>
+                -->
                     <div class="section why-choose-us">
                         <div class="why-choose-us-wrapper-top">
                             <div class="container">
@@ -399,7 +397,7 @@
                                     <button onclick="window.location.href='student-registration.html'" class="btn btn-green-2"><span>start Learning now </span>
                                     </button>
                                 </div>
-                                <div data-wow-delay="0.2s" data-wow-duration="1.2s" class="background-girl-1 wow fadeInUp"><img src="assets/images/girl-1.png" alt="" class="img-responsive" />
+                                <div data-wow-delay="0.2s" data-wow-duration="1.2s" class="background-girl-1 wow fadeInUp"><img src="{% static 'images/girl-1.png' %}" alt="" class="img-responsive" />
                                 </div>
                             </div>
                         </div>
@@ -485,7 +483,7 @@
                     </a></div>
                 </div>
                 
-    <!-- BUTTON BACK TO TOP-->
+     BUTTON BACK TO TOP-->
                     <div id="back-top"><a href="#top"><i class="fa fa-angle-double-up"></i></a>
                     </div>
                 </div>
@@ -569,25 +567,25 @@
 </div>
 <!-- JAVASCRIPT LIBS-->
 <script>if ((Cookies.get('color-skin') != undefined) && (Cookies.get('color-skin') != 'color-1')) {
-    $('.logo .header-logo img').attr('src', 'assets/images/logo-' + Cookies.get('color-skin') + '.png');
+    $('.logo .header-logo img').attr('src', '{% static "images/logo-" %}' + Cookies.get('color-skin') + '.png');
 } else if ((Cookies.get('color-skin') == undefined) || (Cookies.get('color-skin') == 'color-1')) {
-    $('.logo .header-logo img').attr('src', 'assets/images/logo-color-1.png');
+    $('.logo .header-logo img').attr('src', '{% static "images/logo-color-1.png" %}');
 }</script>
-<script src="assets/libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="assets/libs/smooth-scroll/jquery-smoothscroll.js"></script>
-<script src="assets/libs/owl-carousel-2.0/owl.carousel.min.js"></script>
-<script src="assets/libs/appear/jquery.appear.js"></script>
-<script src="assets/libs/count-to/jquery.countTo.js"></script>
-<script src="assets/libs/wow-js/wow.min.js"></script>
-<script src="assets/libs/selectbox/js/jquery.selectbox-0.2.min.js"></script>
-<script src="assets/libs/fancybox/js/jquery.fancybox.js"></script>
-<script src="assets/libs/fancybox/js/jquery.fancybox-buttons.js"></script>
+<script src="{% static 'libs/bootstrap-3.3.5/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'libs/smooth-scroll/jquery-smoothscroll.js' %}"></script>
+<script src="{% static 'libs/owl-carousel-2.0/owl.carousel.min.js' %}"></script>
+<script src="{% static 'libs/appear/jquery.appear.js' %}"></script>
+<script src="{% static 'libs/count-to/jquery.countTo.js' %}"></script>
+<script src="{% static 'libs/wow-js/wow.min.js' %}"></script>
+<script src="{% static 'libs/selectbox/js/jquery.selectbox-0.2.min.js' %}"></script>
+<script src="{% static 'libs/fancybox/js/jquery.fancybox.js' %}"></script>
+<script src="{% static 'libs/fancybox/js/jquery.fancybox-buttons.js' %}"></script>
 <!-- MAIN JS-->
-<script src="assets/js/main.js"></script>
+<script src="{% static 'js/main.js' %}"></script>
 <!-- LOADING SCRIPTS FOR PAGE-->
-<script src="assets/libs/isotope/isotope.pkgd.min.js"></script>
-<script src="assets/libs/isotope/fit-columns.js"></script>
-<script src="assets/js/pages/homepage.js"></script>
+<script src="{% static 'libs/isotope/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'libs/isotope/fit-columns.js' %}"></script>
+<script src="{% static 'js/pages/homepage.js' %}"></script>
 </body>
 
 </html>
