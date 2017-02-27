@@ -1,35 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
 
-<head><title>QuarkMe | About Us</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- LIBRARY FONT-->
-    <link type="text/css" rel="stylesheet" href="../../fonts.googleapis.com/css5a17.css?family=Lato:400,400italic,700,900,300">
-    <link type="text/css" rel="stylesheet" href="assets/font/font-icon/font-awesome-4.4.0/css/font-awesome.css">
-    <link type="text/css" rel="stylesheet" href="assets/font/font-icon/font-svg/css/Glyphter.css">
-    <!-- LIBRARY CSS-->
-    <link type="text/css" rel="stylesheet" href="assets/libs/animate/animate.css">
-    <link type="text/css" rel="stylesheet" href="assets/libs/bootstrap-3.3.5/css/bootstrap.css">
-    <link type="text/css" rel="stylesheet" href="assets/libs/owl-carousel-2.0/assets/owl.carousel.css">
-    <link type="text/css" rel="stylesheet" href="assets/libs/selectbox/css/jquery.selectbox.css">
-    <link type="text/css" rel="stylesheet" href="assets/libs/fancybox/css/jquery.fancybox.css">
-    <link type="text/css" rel="stylesheet" href="assets/libs/fancybox/css/jquery.fancybox-buttons.css">
-    <link type="text/css" rel="stylesheet" href="assets/libs/media-element/build/mediaelementplayer.min.css">
-    <!-- STYLE CSS    --><!--link(type="text/css", rel='stylesheet', href='assets/css/color-1.css', id="color-skins")-->
-    <link type="text/css" rel="stylesheet" href="#" id="color-skins">
-    <script src="assets/libs/jquery/jquery-2.1.4.min.js"></script>
-    <script src="assets/libs/js-cookie/js.cookie.js"></script>
-    <script>if ((Cookies.get('color-skin') != undefined) && (Cookies.get('color-skin') != 'color-1')) {
-        $('#color-skins').attr('href', 'assets/css/' + Cookies.get('color-skin') + '.css');
-    } else if ((Cookies.get('color-skin') == undefined) || (Cookies.get('color-skin') == 'color-1')) {
-        $('#color-skins').attr('href', 'assets/css/color-1.css');
-    }
+{% block title %}
+QuarkMe | About Us
+{% endblock %}
 
-
-    </script> 
-</head>
-<body><!-- HEADER-->
+{% load staticfiles %}
+{% block body %}
+<!-- HEADER-->
 <header>
     <div class="header-topbar">
         <div class="container">
@@ -52,16 +29,16 @@
                 </div>
                 <nav class="navigation collapse navbar-collapse pull-right">
                     <ul class="nav-links nav navbar-nav">
-                      <li><a href="index.html" class="main-menu">Home</a></li>
-                        <li><a href="about-us.html" class="main-menu">About</a></li> </li>
+                      <li><a href="/" class="main-menu">Home</a></li>
+                        <li><a href="#" class="main-menu">About</a></li> </li>
                         <li><a href="login.html" class="main-menu">Login</a></li>
                         <li><a href="student-registration.html" class="main-menu">Register</a></li>
                         <li><a href="tutor-registration.html" class="main-menu">Become a Tutor</a></li>
-                    <li><a href="careers.html" class="main-menu">Careers</a></li>
+                    <li><a href="careers" class="main-menu">Careers</a></li>
                     
-                        <li><a href="faq.html" class="main-menu">FAQ</a></li>
-                        <li><a href="contact.html" class="main-menu">Contact</a></li>
-                        <li><a href="how-it-works.html" class="main-menu">How It Works</a>
+                        <li><a href="faq" class="main-menu">FAQ</a></li>
+                        <li><a href="contact" class="main-menu">Contact</a></li>
+                        <li><a href="how-it-works" class="main-menu">How It Works</a>
                         </li>
                     </ul>
                 </nav>
@@ -95,7 +72,7 @@
                     <div class="container">
                         <div class="intro-edu-wrapper">
                             <div class="row">
-                                <div class="col-md-5"><img src="assets/images/people-avatar-8.png" alt="" class="intro-image fadeInLeft animated wow"/></div>
+                                <div class="col-md-5"><img src="{% static 'images/people-avatar-8.png' %}" alt="" class="intro-image fadeInLeft animated wow"/></div>
                                 <div class="col-md-7">
                                     <div class="intro-title">WHAT IS <b>Quarkme? </b></div>
                                     <div class="intro-content"><p>QuarkMe is a group of people who are committed to changing the way our youth are being educated. Since learning is a direct consequence of the methodology of teaching, we at QuarkMe are dedicated to the philosophy of merging trained tutoring with independent thinking to bring out the ingenuity in students. 
@@ -181,93 +158,4 @@ We encourage, and extensively train young meritorious students, to teach and pas
     <!-- BUTTON BACK TO TOP-->
     <div id="back-top"><a href="#top"><i class="fa fa-angle-double-up"></i></a></div>
 </div>
-<!-- FOOTER-->
-<footer>
-    <div class="footer-top">
-        <div class="container">
-            <div class="footer-top-wrapper">
-                <div class="footer-top-left"><p class="footer-top-focus">BECOME AN INSTRUCTOR</p>
-
-                    <p class="footer-top-text">Join us in our endeavour to revolutionize education!</p></div>
-                <div class="footer-top-right">
-                    <button onclick="window.location.href='tutor-registration.html'" class="btn btn-blue btn-bold"><span>GET STARTED NOW</span></button>
-                </div>
-            </div>
-        </div>
-    </div>
-       <div class="footer-main">
-        <div class="container">
-            <div class="footer-main-wrapper">
-                <div class="row">
-                    <div class="col-2">
-                        <div class="col-md-4 col-sm-6 col-xs-6 sd380">
-                            <div class="edugate-widget widget">
-                                <div class="title-widget">QuarkMe</div>
-                                <div class="content-widget"><p>QuarkMe is a group of people who are committed to changing the way our youth are being educated.</p>
-
-                                    <div class="info-list">
-                                        <ul class="list-unstyled">
-                                            <li><i class="fa fa-envelope-o"></i><a href="#">contact@quarkme.com</a></li>
-                                    
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-xs-6 sd380" style="margin-left:10px;">
-                            <div class="mailing-widget widget">
-                                <div class="title-widget">MAILING</div>
-                                <div class="content-wiget"><p>Sign up for our mailing list to get latest updates and offers.</p>
-
-                                    <form action="">
-                                        <div class="input-group"><input type="text" placeholder="Email address" class="form-control form-email-widget"/><span class="input-group-btn"><input type="submit" value="✓" class="btn btn-email"/></span></div>
-                                    </form>
-                                    <p>We respect your privacy</p>
-
-                                </div>
-                            </div>
-                        </div>
-   <div class="col-md-4 col-sm-6 col-xs-6 sd380" style="margin-left:20px;"> &nbsp; &nbsp; &nbsp;                        <div class="socials"> &nbsp; &nbsp; &nbsp; <a href="https://www.fb.com/quarkmeofficial" class="facebook"><i class="fa fa-facebook"></i></a><a href="https://plus.google.com/u/3/117006724038614661062" class="google"><i class="fa fa-google-plus"></i></a><a href="https://twitter.com/QuarkMeOfficial" class="twitter"><i class="fa fa-twitter"></i><a href="https://www.instagram.com/quarkmeofficial/" class="twitter"><i class="fa fa-instagram"></i><a href="http://quarkme.blogspot.in" class="twitter"><i class="fa fa-sticky-note"></i></div>
-
-                    </div>        
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</footer>
-<!-- THEME SETTING-->
-
-<!-- LOADING-->
-<div class="body-2 loading">
-    <div class="dots-loader"></div>
-</div>
-<!-- JAVASCRIPT LIBS-->
-<script>if ((Cookies.get('color-skin') != undefined) && (Cookies.get('color-skin') != 'color-1')) {
-    $('.logo .header-logo img').attr('src', 'assets/images/logo-' + Cookies.get('color-skin') + '.png');
-} else if ((Cookies.get('color-skin') == undefined) || (Cookies.get('color-skin') == 'color-1')) {
-    $('.logo .header-logo img').attr('src', 'assets/images/logo-color-1.png');
-}</script>
-<script src="assets/libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="assets/libs/smooth-scroll/jquery-smoothscroll.js"></script>
-<script src="assets/libs/owl-carousel-2.0/owl.carousel.min.js"></script>
-<script src="assets/libs/appear/jquery.appear.js"></script>
-<script src="assets/libs/count-to/jquery.countTo.js"></script>
-<script src="assets/libs/wow-js/wow.min.js"></script>
-<script src="assets/libs/selectbox/js/jquery.selectbox-0.2.min.js"></script>
-<script src="assets/libs/fancybox/js/jquery.fancybox.js"></script>
-<script src="assets/libs/fancybox/js/jquery.fancybox-buttons.js"></script>
-<!-- MAIN JS-->
-<script src="assets/js/main.js"></script>
-<!-- LOADING SCRIPTS FOR PAGE-->
-<script src="assets/libs/isotope/isotope.pkgd.min.js"></script>
-<script src="assets/libs/isotope/fit-columns.js"></script>
-<script src="assets/js/pages/homepage.js"></script>
-</body>
-
-</html>
+{% endblock %}
