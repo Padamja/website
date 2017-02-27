@@ -9,7 +9,7 @@ urlpatterns = [
 	url(r'^careers$', views.careers),
     url(r'^terms$', views.terms),
 	url(r'^login$', views.login),
-    url(r'^student-registeration$', views.streg),
-	url(r'^teacher-registeration$', views.tereg),
+    url(r'^student-registration$', views.streg),
+	url(r'^tutor-registration$', views.tereg),
 	url(r'^$', views.home),
 ]

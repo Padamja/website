@@ -26,7 +26,7 @@ def login(request):
 	return render(request, 'html/login.html')
 
 def streg(request):
-	return render(request, 'html/student-registeration.html')
+	return render(request, 'html/student-registration.html')
 
 def tereg(request):
-	return render(request, 'html/tutor-registeration.html')
+	return render(request, 'html/tutor-registration.html')
