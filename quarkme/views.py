@@ -15,3 +15,6 @@ def contact(request):
 
 def careers(request):
 	return render(request, 'html/careers.html')
+
+def hit(request):
+	return render(request, 'html/how-it-works.html')
