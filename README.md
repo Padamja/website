@@ -20,3 +20,9 @@ This website is an Django app with Postgres used as a database. You can run the 
 This will activate the virtualenv present. Then you need to run
 
     `website$ python manage.py runserver`
+
+2) Install all the requirements which are listed in requirements.txt and then run
+
+	`website$ python manage.py runserver`
+
+If you are going for the second option, keep an eye on requirements.txt as things can be added with time. If you are using our virtualenv don't worry as new things will be added to it.
