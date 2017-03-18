@@ -25,21 +25,21 @@
 }
 
 .btn.btn-green {
-    background-color: #86bc42
+    background-color: #662d91
 }
 
 .btn.btn-green:after {
     position: absolute;
     content: '';
     right: 100%;
-    background-color: #242c42;
+    background-color: #fff;
     width: 100%;
     height: 100%;
     top: 0
 }
 
 .btn.btn-green:hover {
-    color: #fff
+    color: #662d91
 }
 
 .btn.btn-green:hover:after {
@@ -67,7 +67,7 @@
 .btn.btn-green-2:after {
     position: absolute;
     content: '';
-    background-color: #86bc42;
+    background-color: #29abe2;
     width: 100%;
     height: 100%;
     top: 0;
@@ -95,7 +95,7 @@
 .btn.btn-green-3:before {
     position: absolute;
     content: '';
-    border: 2px solid #86bc42;
+    border: 2px solid #29abe2;
     width: 100%;
     height: 100%;
     top: 0;
@@ -105,7 +105,7 @@
 .btn.btn-green-3:after {
     position: absolute;
     content: '';
-    background-color: #86bc42;
+    background-color: #29abe2;
     width: 100%;
     height: 100%;
     top: 0;
@@ -113,7 +113,7 @@
 }
 
 .btn.btn-green-3:hover {
-    color: #86bc42
+    color: #29abe2
 }
 
 .btn.btn-green-3:hover:after {
@@ -121,7 +121,7 @@
 }
 
 .btn.btn-green-3:focus span {
-    color: #86bc42
+    color: #29abe2
 }
 
 .btn.btn-transition {
@@ -143,7 +143,7 @@
     position: absolute;
     content: '';
     right: 100%;
-    background-color: #86bc42;
+    background-color: #29abe2;
     width: 100%;
     height: 100%;
     top: 0
@@ -164,14 +164,14 @@
 .btn.btn-transition-2 {
     line-height: 40px;
     background-color: transparent;
-    color: #242c42;
+    color: #662d91;
     padding: 0 27px
 }
 
 .btn.btn-transition-2:before {
     position: absolute;
     content: '';
-    border: 2px solid #242c42;
+    border: 2px solid #662d91;
     width: 100%;
     height: 100%;
     left: 0
@@ -181,7 +181,7 @@
     position: absolute;
     content: '';
     right: 100%;
-    background-color: #242c42;
+    background-color: #662d91;
     width: 100%;
     height: 100%;
     top: 0
@@ -229,7 +229,7 @@
 }
 
 .btn.btn-transition-3:hover {
-    color: #86bc42
+    color: #29abe2
 }
 
 .btn.btn-transition-3:hover:after {
@@ -237,11 +237,11 @@
 }
 
 .btn.btn-transition-3:hover:before {
-    border-left-color: #86bc42
+    border-left-color: #29abe2
 }
 
 .btn.btn-transition-3:focus span {
-    color: #86bc42
+    color: #29abe2
 }
 
 .btn.btn-blue {
@@ -259,7 +259,7 @@
 }
 
 .btn.btn-blue:hover {
-    color: #86bc42
+    color: #29abe2
 }
 
 .btn.btn-blue:hover:after {
@@ -267,7 +267,7 @@
 }
 
 .btn.btn-blue:focus span {
-    color: #86bc42
+    color: #29abe2
 }
 
 .btn.btn-grey {
@@ -280,7 +280,7 @@
     position: absolute;
     content: '';
     right: 100%;
-    background-color: #86bc42;
+    background-color: #29abe2;
     width: 100%;
     height: 100%;
     top: 0
@@ -321,7 +321,7 @@
     position: absolute;
     content: '';
     right: 100%;
-    background-color: #86bc42;
+    background-color: #29abe2;
     width: 100%;
     height: 100%;
     top: 0
@@ -454,7 +454,7 @@
 .group-title-index .bottom-title .bottom-icon {
     margin: 0 auto;
     font-size: 26px;
-    color: #86bc42
+    color: #29abe2
 }
 
 .group-title-index .bottom-title:after, .group-title-index .bottom-title:before {
@@ -462,7 +462,7 @@
     content: '';
     width: 22px;
     height: 2px;
-    background-color: #86bc42;
+    background-color: #29abe2;
     top: 50%;
     margin-top: -5px
 }
@@ -515,7 +515,7 @@
 }
 
 .info .item a:hover {
-    color: #86bc42
+    color: #29abe2
 }
 
 .info .item:after {
@@ -744,7 +744,7 @@
     content: '';
     width: 0px;
     height: 2px;
-    background-color: #86bc42;
+    background-color: #49575f;
     bottom: -2px;
     left: 0;
     transition: all 0.3s ease
@@ -762,7 +762,7 @@
 .edugate-tabs li.active .text {
     border: none;
     line-height: 1;
-    color: #86bc42
+    color: #29abe2
 }
 
 .edugate-tabs li.active .text:after {
@@ -770,7 +770,7 @@
     content: '';
     width: 100%;
     height: 2px;
-    background-color: #86bc42;
+    background-color: #29abe2;
     bottom: -2px;
     left: 0;
     transition: all 0.3s ease
@@ -778,7 +778,7 @@
 
 .edugate-tabs li.active .text:focus, .edugate-tabs li.active .text:hover {
     border: none;
-    color: #86bc42
+    color: #29abe2
 }
 
 .staff-item {
@@ -848,7 +848,7 @@
 }
 
 .staff-item .staff-info .staff-job {
-    color: #86bc42;
+    color: #29abe2;
     text-transform: capitalize;
     margin-bottom: 25px
 }
@@ -885,7 +885,7 @@
 }
 
 .staff-item:hover {
-    background-color: #86bc42
+    background-color: #29abe2
 }
 
 .staff-item:hover .staff-info .staff-avatar img {
@@ -999,7 +999,7 @@
 }
 
 .staff-item2 .staff-info .staff-job {
-    color: #86bc42;
+    color: #29abe2;
     text-transform: capitalize;
     margin-bottom: 25px
 }
@@ -1039,19 +1039,19 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    border: 2px solid #86bc42;
+    border: 2px solid #29abe2;
     background-color: transparent;
     width: 40px;
     height: 40px;
     text-align: center;
     font-size: 24px;
     z-index: 100;
-    color: #86bc42;
+    color: #29abe2;
     transition: all .5s ease-in-out
 }
 
 #back-top a:hover {
-    background-color: #86bc42;
+    background-color: #29abe2;
     color: #fff
 }
 
@@ -1094,7 +1094,7 @@
 }
 
 .nav-search form .searchbutton:hover {
-    color: #86bc42
+    color: #29abe2
 }
 
 .pagination {
@@ -1135,12 +1135,12 @@
 }
 
 .pagination .pagination__list .btn-squae:hover {
-    background-color: #86bc42;
+    background-color: #29abe2;
     color: #fff
 }
 
 .pagination .pagination__list .btn-squae.active {
-    background-color: #86bc42;
+    background-color: #29abe2;
     pointer-events: none
 }
 
@@ -1150,7 +1150,7 @@
     line-height: 40px;
     text-align: center;
     color: #fff;
-    background-color: #86bc42;
+    background-color: #29abe2;
     display: inline-block;
     font-size: 24px;
     font-family: Helvetica, Arial, sans-serif;
@@ -1188,7 +1188,7 @@ header .header-topbar a, header .header-topbar span, header .header-topbar p {
 }
 
 header .header-topbar a:hover, header .header-topbar span:hover, header .header-topbar p:hover {
-    color: #86bc42
+    color: #29abe2
 }
 
 header .header-topbar .email, header .header-topbar .hotline {
@@ -1196,7 +1196,7 @@ header .header-topbar .email, header .header-topbar .hotline {
 }
 
 header .header-topbar .email .topbar-icon, header .header-topbar .hotline .topbar-icon {
-    color: #86bc42;
+    color: #29abe2;
     margin-right: 10px;
     font-size: 16px
 }
@@ -1223,7 +1223,7 @@ header .header-topbar .socials a i {
 }
 
 header .header-topbar .socials a:hover i {
-    color: #86bc42
+    color: #29abe2
 }
 
 header .header-topbar .socials a:last-child {
@@ -1256,7 +1256,7 @@ header .header-topbar.homepage-03 a, header .header-topbar.homepage-03 span, hea
 }
 
 header .header-topbar.homepage-03 a:hover, header .header-topbar.homepage-03 span:hover, header .header-topbar.homepage-03 p:hover {
-    color: #86bc42
+    color: #29abe2
 }
 
 header .header-topbar.homepage-03 .logo-topbar img {
@@ -1318,8 +1318,8 @@ header .header-main .navigation .nav-links li .main-menu:focus {
 }
 
 header .header-main .navigation .nav-links li.active .main-menu {
-    border-bottom: 5px solid #86bc42;
-    color: #86bc42;
+    border-bottom: 5px solid #29abe2;
+    color: #29abe2;
     font-weight: bold
 }
 
@@ -1333,7 +1333,7 @@ header .header-main .navigation .nav-links li:hover .main-menu:after {
     width: 100%;
     bottom: -5px;
     height: 5px;
-    background-color: #86bc42;
+    background-color: #29abe2;
     left: 0
 }
 
@@ -1343,7 +1343,7 @@ header .header-main .navigation .nav-links li.button-search {
 
 header .header-main .navigation .nav-links li.button-search:hover .main-menu {
     background-color: transparent;
-    color: #86bc42
+    color: #29abe2
 }
 
 header .header-main .navigation .nav-links li.button-search:hover .main-menu:after {
@@ -1360,7 +1360,7 @@ header .header-main .edugate-dropdown-menu-1, header .header-main .edugate-dropd
     border-radius: 0;
     border: none;
     padding-bottom: 0;
-    border-bottom: 5px solid #86bc42
+    border-bottom: 5px solid #29abe2
 }
 
 header .header-main .edugate-dropdown-menu-1 li, header .header-main .edugate-dropdown-menu-2 li {
@@ -1447,7 +1447,7 @@ header .header-main.homepage-03 .navigation .nav-links li:hover .main-menu {
 
 header .header-main.homepage-03 .navigation .nav-links li.button-search:hover .main-menu {
     background-color: transparent;
-    color: #86bc42
+    color: #29abe2
 }
 
 header .header-main.homepage-03 .navigation .nav-links li.button-search:hover .main-menu:after {
@@ -1491,7 +1491,7 @@ header .header-main.homepage-03.header-fixed .navigation .nav-links li .main-men
 }
 
 header .header-main.homepage-03.header-fixed .navigation .nav-links li.active .main-menu {
-    border-bottom: 5px solid #86bc42
+    border-bottom: 5px solid #29abe2
 }
 
 header .header-main.homepage-03.header-fixed .edugate-dropdown-menu-1 {
@@ -1539,7 +1539,7 @@ footer {
 }
 
 .footer-top {
-    background-color: #86bc42;
+    background-color: #29abe2;
     color: #fff
 }
 
@@ -1583,7 +1583,7 @@ footer {
 }
 
 .footer-main {
-    background-color: #242c42;
+    background-color: #1b1464;
     overflow-x: hidden
 }
 
@@ -1594,7 +1594,7 @@ footer {
 }
 
 .footer-main .title-widget {
-    color: #86bc42;
+    color: #29abe2;
     padding-bottom: 40px;
     font-size: 16px;
     text-align: left
@@ -1634,7 +1634,7 @@ footer {
 }
 
 .footer-main .hyperlink .hyper-left a:hover {
-    color: #86bc42
+    color: #29abe2
 }
 
 .footer-main .hyperlink .hyper-right {
@@ -1651,15 +1651,15 @@ footer {
 }
 
 .footer-main .widget .cur-title {
-    color: #86bc42
+    color: #29abe2
 }
 
 .footer-main .recent-post-widget .content-widget a:hover, .footer-main .popular-course-widget .content-widget a:hover, .footer-main .category-widget .content-widget a:hover, .footer-main .archive-widget .content-widget a:hover {
-    color: #86bc42
+    color: #29abe2
 }
 
 .footer-main .recent-post-widget .content-widget a:hover span, .footer-main .popular-course-widget .content-widget a:hover span, .footer-main .category-widget .content-widget a:hover span, .footer-main .archive-widget .content-widget a:hover span, .footer-main .recent-post-widget .content-widget a:hover p, .footer-main .popular-course-widget .content-widget a:hover p, .footer-main .category-widget .content-widget a:hover p, .footer-main .archive-widget .content-widget a:hover p, .footer-main .recent-post-widget .content-widget a:hover i, .footer-main .popular-course-widget .content-widget a:hover i, .footer-main .category-widget .content-widget a:hover i, .footer-main .archive-widget .content-widget a:hover i {
-    color: #86bc42
+    color: #29abe2
 }
 
 .footer-main .category-widget li, .footer-main .archive-widget li {
@@ -1688,7 +1688,7 @@ footer {
 }
 
 .footer-main .tag-widget li .tag-item:hover {
-    background-color: #86bc42
+    background-color: #29abe2
 }
 
 .footer-main .tag-widget li .tag-item:hover .tag-item {
@@ -1696,7 +1696,7 @@ footer {
 }
 
 .footer-main .course-price-widget .cur-title.cur {
-    color: #86bc42
+    color: #29abe2
 }
 
 .sidebar a {
@@ -1723,7 +1723,7 @@ footer {
 }
 
 .widget a:hover {
-    color: #86bc42
+    color: #29abe2
 }
 
 .widget p {
@@ -1786,7 +1786,7 @@ footer {
 }
 
 .widget .media .link:hover {
-    color: #86bc42
+    color: #29abe2
 }
 
 .edugate-widget p {
@@ -1836,7 +1836,7 @@ footer {
 .useful-link-list ul li i {
     display: table-cell;
     width: 15px;
-    color: #86bc42;
+    color: #29abe2;
     font-weight: bold
 }
 
@@ -1859,7 +1859,7 @@ footer {
 }
 
 .gallery-widget .view-more i {
-    color: #86bc42
+    color: #29abe2
 }
 
 .mailing-widget p {
@@ -1872,7 +1872,7 @@ footer {
 }
 
 .mailing-widget .btn-email {
-    background-color: #86bc42;
+    background-color: #29abe2;
     line-height: 33px;
     text-align: center;
     padding: 0px 14px;
@@ -1923,7 +1923,7 @@ footer {
 }
 
 .socials a:hover, .socials .link:hover {
-    background-color: #86bc42
+    background-color: #29abe2
 }
 
 .social-widget {
@@ -1939,7 +1939,7 @@ footer {
 }
 
 .cur {
-    color: #86bc42;
+    color: #29abe2;
     font-weight: 900;
     font-size: 20px;
     margin-top: -5px;
@@ -1982,11 +1982,11 @@ footer {
 }
 
 .category-widget li .link:hover, .archive-widget li .link:hover {
-    color: #86bc42
+    color: #29abe2
 }
 
 .category-widget li .link:hover span, .archive-widget li .link:hover span {
-    color: #86bc42
+    color: #29abe2
 }
 
 .tag-widget {
@@ -2115,8 +2115,8 @@ footer {
 }
 
 .slider-banner .owl-controls .owl-dots .owl-dot.active {
-    background-color: #86bc42;
-    border: 2px solid #86bc42
+    background-color: #29abe2;
+    border: 2px solid #29abe2
 }
 
 .slider-banner-02, .slider-banner-03 {
@@ -2156,7 +2156,7 @@ footer {
 }
 
 .slider-banner-02 {
-    background-image: url("../images/banner-2.jpg");
+    background-image: url("../images/pexels-photo-273238.jpeg");
     height: 100vh;
     color: #49575f;
     background-size: cover;
@@ -2169,7 +2169,7 @@ footer {
 }
 
 .slider-banner-02 .arrow-down {
-    color: #49575f;
+    color: #662d91;
     position: absolute;
     bottom: 20px;
     display: block;
@@ -2260,7 +2260,7 @@ footer {
 }
 
 .progress-bars {
-    background-image: url("../images/background-count-number.png");
+    background-image: url("../images/background-count-number.jpeg");
     background-repeat: repeat;
     background-position: center;
     width: 100%;
@@ -2313,7 +2313,7 @@ footer {
     bottom: 0;
     left: 50%;
     margin-left: -18px;
-    background-color: #86bc42
+    background-color:#29abe2
 }
 
 .progress-bar-number .name-inner {
@@ -2387,7 +2387,7 @@ footer {
 
 .section-icon i {
     font-size: 36px;
-    color: #86bc42;
+    color: #29abe2;
     display: table-cell;
     vertical-align: top
 }
@@ -2498,7 +2498,7 @@ footer {
 .slider-talk-about-us .peopel-item .group-peole-info .peopel-name {
     font-weight: 900;
     font-size: 15px;
-    color: #86bc42;
+    color: #29abe2;
     text-transform: capitalize
 }
 
@@ -2535,8 +2535,8 @@ footer {
 }
 
 .slider-talk-about-us .carousel-indicators li.active {
-    background-color: #86bc42;
-    border: 2px solid #86bc42
+    background-color: #29abe2;
+    border: 2px solid #29abe2
 }
 
 .pricing > .container > .row {
@@ -2647,7 +2647,7 @@ footer {
 }
 
 .pricing .pricing-widget:hover .pricing-header .price-cost, .pricing .pricing-widget.active .pricing-header .price-cost {
-    background-color: #86bc42;
+    background-color: #29abe2;
     color: #fff;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
     -webkit-transform: translateY(-15px);
@@ -2655,7 +2655,7 @@ footer {
 }
 
 .pricing .pricing-widget:hover .pricing-content, .pricing .pricing-widget.active .pricing-content {
-    background-color: #86bc42;
+    background-color: #29abe2;
     color: #fff;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
     -webkit-transform: scale(1.02);
@@ -2729,7 +2729,7 @@ footer {
     line-height: 36px;
     text-align: center;
     color: #fff;
-    background-color: #86bc42;
+    background-color: #8c9aa5;
     display: inline-block;
     font-size: 24px;
     font-family: Helvetica, Arial, sans-serif;
@@ -2776,7 +2776,7 @@ footer {
     margin-left: -73px;
     height: 146px;
     border-radius: 50%;
-    background-color: #86bc42;
+    background-color: #29abe2;
     color: #fff;
     z-index: 11;
     display: table;
@@ -2839,7 +2839,7 @@ footer {
     left: -1px;
     bottom: -1px;
     right: -1px;
-    border: 12px solid #86bc42;
+    border: 12px solid #29abe2;
     border-radius: 50%
 }
 
@@ -2854,7 +2854,7 @@ footer {
 }
 
 .choose-course .icon-circle:hover .icon-background {
-    background-color: #86bc42;
+    background-color: #29abe2;
     bottom: 90%
 }
 
@@ -2892,7 +2892,7 @@ footer {
 }
 
 .choose-course .name-course:hover a, .choose-course .name-course:hover p, .choose-course .name-course:hover span, .choose-course .name-course:hover i {
-    color: #86bc42
+    color: #29abe2
 }
 
 .choose-course .choose-course-wrapper .col-md-4.col-xs-6 {
@@ -2917,7 +2917,7 @@ footer {
 .choose-course-2 .item-course .icon-course .icons-img {
     font-size: 64px;
     line-height: 80px;
-    color: #86bc42;
+    color: #29abe2;
     transition: all .5s ease-in-out
 }
 
@@ -2942,7 +2942,7 @@ footer {
     top: 100%;
     width: 100%;
     height: 100%;
-    background-color: #86bc42;
+    background-color: #29abe2;
     color: #fff;
     transition: all .5s ease-in-out
 }
@@ -3057,7 +3057,7 @@ footer {
     font-size: 64px;
     width: 64px;
     line-height: 1;
-    color: #86bc42;
+    color: #29abe2;
     transition: all .5s ease-in-out
 }
 
@@ -3211,7 +3211,7 @@ footer {
 }
 
 .page-title {
-    background-image: url("../images/banner-1.jpg");
+    background-image: url("../images/banner-1.jpeg");
     background-repeat: repeat;
     background-attachment: fixed;
     background-position: top;
@@ -3256,7 +3256,7 @@ footer {
 }
 
 .page-title .breadcrumb li a:hover {
-    color: #86bc42
+    color: #29abe2
 }
 
 .page-title .breadcrumb li:last-child {
@@ -3276,7 +3276,7 @@ footer {
 
 .search-input {
     background: url("../images/background-search.png") no-repeat;
-    background-color: #86bc42;
+    background-color: #29abe2;
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -3345,7 +3345,7 @@ footer {
     top: 50%;
     margin-top: -15px;
     color: #fff;
-    background-color: #86bc42;
+    background-color: #29abe2;
     width: 30px;
     text-align: center;
     height: 30px;
@@ -3479,7 +3479,7 @@ footer {
 .wrapper-404 .title-404 .warning {
     font-weight: 900;
     font-size: 215px;
-    color: #86bc42;
+    color: #29abe2;
     text-shadow: 2px 2px 12px #DEDEDE;
     margin: 0px
 }
@@ -3503,7 +3503,7 @@ footer {
 }
 
 .contact-method .method-item i {
-    color: #86bc42;
+    color: #29abe2;
     font-size: 40px;
     margin-bottom: 45px
 }
@@ -3616,7 +3616,7 @@ footer {
 }
 
 .news-detail .info .item a:hover span {
-    color: #86bc42
+    color: #29abe2
 }
 
 .news-image {
@@ -3733,13 +3733,13 @@ ul.list-detail li a {
 }
 
 ul.list-detail li a:hover {
-    color: #86bc42
+    color: #29abe2
 }
 
 ul.list-detail li i {
     display: table-cell;
     width: 25px;
-    color: #86bc42;
+    color: #29abe2;
     font-weight: bold;
     font-size: 10px
 }
@@ -3860,7 +3860,7 @@ ul.list-detail li i {
 
 .news-comment li .media-body .reply-comment:hover {
     color: #fff;
-    background-color: #86bc42
+    background-color: #29abe2
 }
 
 .news-comment li .media-body .time {
@@ -3944,7 +3944,7 @@ ul.list-detail li i {
 .underline::after {
     width: 50px;
     height: 5px;
-    background-color: #86bc42;
+    background-color: #29abe2;
     content: "";
     position: absolute;
     display: block
@@ -4059,7 +4059,7 @@ ul.list-detail li i {
 }
 
 .edu-ab .edu-ab-content ul li .circle-icon i {
-    color: #86bc42;
+    color: #29abe2;
     line-height: 100px;
     transition: all .3s ease-in
 }
@@ -4087,7 +4087,7 @@ ul.list-detail li i {
 }
 
 .edu-ab .edu-ab-content ul li .circle-icon:hover {
-    background-color: #86bc42
+    background-color: #29abe2
 }
 
 .edu-ab .edu-ab-content ul li .circle-icon:hover i {
@@ -4165,7 +4165,7 @@ ul.list-detail li i {
 }
 
 .edu-feature .edu-feature-list li i {
-    color: #86bc42;
+    color: #29abe2;
     width: 35px
 }
 
@@ -4203,6 +4203,7 @@ ul.list-detail li i {
     position: relative;
     z-index: 3
 }
+
 
 .course-video .video-btn button.video-btn-right {
     margin-left: 5px
@@ -4267,7 +4268,7 @@ ul.list-detail li i {
 }
 
 .edu-table-responsive td a:hover {
-    color: #86bc42
+    color: #29abe2
 }
 
 .edu-table-responsive td.bold-color {
@@ -4279,7 +4280,7 @@ ul.list-detail li i {
 }
 
 .edu-table-responsive td.green-color {
-    color: #86bc42
+    color: #29abe2
 }
 
 .edu-table-responsive td.heading-content {
@@ -4297,7 +4298,7 @@ ul.list-detail li i {
 }
 
 .edu-table-responsive td i.fa-caret-right {
-    background-color: #86bc42;
+    background-color: #29abe2;
     border-radius: 50%;
     width: 14px;
     height: 14px;
@@ -4312,7 +4313,7 @@ ul.list-detail li i {
 }
 
 .edu-table-responsive td i.fa-file-text {
-    color: #86bc42
+    color: #29abe2
 }
 
 .edu-table-responsive td i.mr18 {
@@ -4599,7 +4600,7 @@ ul.list-detail li i {
 }
 
 .teacher-skill .teacher-skill-wrapper .row .skill-level .progress .progress-bar {
-    background-color: #86bc42;
+    background-color: #29abe2;
     position: relative;
     transition: width 2s ease;
     border-bottom-left-radius: 7px;
@@ -4711,7 +4712,7 @@ ul.list-detail li i {
     height: 100%;
     padding: 15px;
     text-align: center;
-    background-color: #86bc42;
+    background-color: #29abe2;
     opacity: 0;
     transition: all 0.5s ease
 }
@@ -4903,7 +4904,7 @@ ul.list-detail li i {
     text-align: center;
     font-size: 30px;
     font-weight: 900;
-    color: #86bc42
+    color: #29abe2
 }
 
 .event-detail-title {
@@ -4963,7 +4964,7 @@ ul.list-detail li i {
 
 .info-event-detail .note-time span, .info-event-detail .address-info a span {
     margin-left: 10px;
-    color: #86bc42;
+    color: #29abe2;
     font-size: 12px
 }
 
@@ -5095,7 +5096,7 @@ h5 {
 }
 
 .theme-setting .content-theme-setting ul li[data-color="color-1"] {
-    background-color: #86bc42
+    background-color: #29abe2
 }
 
 .theme-setting .content-theme-setting ul li[data-color="color-2"] {
@@ -5285,7 +5286,7 @@ h5 {
 }
 
 .edugate-content .title:hover {
-    color: #86bc42
+    color: #29abe2
 }
 
 .edugate-content .star-rating {
@@ -5336,7 +5337,7 @@ h5 {
 }
 
 .edugate-layout-1 .edugate-content .title:hover {
-    color: #86bc42
+    color: #29abe2
 }
 
 .edugate-layout-1 .edugate-content .info {
@@ -5368,7 +5369,7 @@ h5 {
 }
 
 .edugate-layout-1:hover .edugate-content .title:hover {
-    color: #86bc42
+    color: #29abe2
 }
 
 .col-md-9 .edugate-layout-1 .edugate-image {
@@ -5388,7 +5389,7 @@ h5 {
 }
 
 .col-md-9 .edugate-layout-1 .edugate-content .title:hover {
-    color: #86bc42
+    color: #29abe2
 }
 
 .col-md-9 .edugate-layout-1 .edugate-content .info {
@@ -5428,7 +5429,7 @@ h5 {
 }
 
 .edugate-layout-2 .edugate-content .title:hover {
-    color: #86bc42
+    color: #29abe2
 }
 
 .edugate-layout-2 .edugate-content .info {
@@ -5502,7 +5503,7 @@ h5 {
 }
 
 .edugate-layout-2:hover .edugate-content .title:hover {
-    color: #86bc42
+    color: #29abe2
 }
 
 .edugate-layout-3 {
@@ -5535,7 +5536,7 @@ h5 {
 }
 
 .edugate-layout-3 .edugate-content .title:hover {
-    color: #86bc42
+    color: #29abe2
 }
 
 .edugate-layout-3 .edugate-content .info {
@@ -5552,7 +5553,7 @@ h5 {
     max-height: 72px;
     overflow: hidden
 }
-
+ 
 .edugate-layout-3 .edugate-content .total-courses i, .edugate-layout-3 .edugate-content .total-courses a {
     display: inline-block;
     color: #49575f;
@@ -5564,7 +5565,7 @@ h5 {
 }
 
 .edugate-layout-3 .edugate-content .total-courses a:hover {
-    color: #86bc42
+    color: #29abe2
 }
 
 .edugate-layout-3 .edugate-content .btn {
@@ -5572,7 +5573,7 @@ h5 {
     margin-top: 40px;
     display: block
 }
-
+ 
 .edugate-layout-3:after {
     position: absolute;
     z-index: 2;
@@ -5595,7 +5596,7 @@ h5 {
 }
 
 .edugate-layout-3:hover .edugate-content .title:hover {
-    color: #86bc42
+    color: #29abe2
 }
 
 .edugate-layout-3:hover:after {
@@ -6288,7 +6289,7 @@ h5 {
         padding: 0;
         text-align: right;
         margin: 0 20px 0 20px;
-        border-bottom: 2px solid #86bc42 !important
+        border-bottom: 2px solid #29abe2 !important
     }
 
     header .header-main .edugate-dropdown-menu-1 > li > .link-page {
@@ -6303,7 +6304,7 @@ h5 {
     }
 
     header .header-main .edugate-dropdown-menu-1 li:last-child > a {
-        border-bottom: 1px solid #86bc42
+        border-bottom: 1px solid #29abe2
     }
 
     header .header-main .edugate-dropdown-menu-2 {
@@ -6319,7 +6320,7 @@ h5 {
     }
 
     header .header-main .edugate-dropdown-menu-2 li:last-child > a {
-        border-bottom: 1px solid #86bc42
+        border-bottom: 1px solid #29abe2
     }
 
     header .header-main.header-fixed .logo {
@@ -6438,7 +6439,7 @@ h5 {
     }
 
     .edugate-navbar {
-        background-color: #86bc42;
+        background-color: #29abe2;
         cursor: pointer;
         margin-top: 16px
     }
@@ -6748,7 +6749,7 @@ h5 {
     }
 
     .slider-banner-02 .slider-banner-wrapper .main-title, .slider-banner-03 .slider-banner-wrapper .main-title {
-        font-size: 60px;
+        font-size: 40px;
         margin-bottom: 40px
     }
 
@@ -7808,7 +7809,7 @@ h5 {
     }
 
     .choose-course .icon-circle .info .info-back:before {
-        border: 8px solid #86bc42
+        border: 8px solid #29abe2
     }
 
     .edugate-layout-2 .edugate-layout-2-wrapper {
