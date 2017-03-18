@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
+{% load staticfiles %}
 <head>
     <title> QuarkMe | Register </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" type="text/css" href="css/smart-forms.css">
-    <link rel="stylesheet" type="text/css" href="css/smart-themes/green.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <script src="jquery-1.9.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/smart-forms.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/smart-themes/green.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
+    <script src="{% static 'js/jquery-1.9.1.min.js' %}"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
 
 
@@ -17,8 +16,8 @@
 
 
 
-    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="js/additional-methods.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.validate.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/additional-methods.min.js' %}"></script>
 
     <!--[if lte IE 9]>   
         <script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
@@ -32,7 +31,7 @@
         $(function() {
 
             /* @custom validation method (smartCaptcha) 
-				------------------------------------------------------------------ */
+                ------------------------------------------------------------------ */
 
             $.validator.methods.smartCaptcha = function(value, element, param) {
                 return value == param;
@@ -41,14 +40,14 @@
             $("#account").validate({
 
                 /* @validation states + elements 
-						------------------------------------------- */
+                        ------------------------------------------- */
 
                 errorClass: "state-error",
                 validClass: "state-success",
                 errorElement: "em",
 
                 /* @validation rules 
-						------------------------------------------ */
+                        ------------------------------------------ */
 
                 rules: {
                     firstname: {
@@ -131,7 +130,7 @@
                 },
 
                 /* @validation error messages 
-						---------------------------------------------- */
+                        ---------------------------------------------- */
 
                 messages: {
                     firstname: {
@@ -200,7 +199,7 @@
                 },
 
                 /* @validation highlighting + error placement  
-						---------------------------------------------------- */
+                        ---------------------------------------------------- */
 
                 highlight: function(element, errorClass, validClass) {
                     $(element).closest('.field').addClass(errorClass).removeClass(validClass);
@@ -220,12 +219,17 @@
 
         });
     </script>
+    <script type="text/javascript">
+        function clicked() {
+            alert('Thanks for signing up!');
+        }
+    </script>
 
 
 
 
     <!--[if lte IE 9]>
-    	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>    
+        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>    
         <script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
     <![endif]-->
 
@@ -234,23 +238,35 @@
     <![endif]-->
 
 </head>
-
-<body class="woodbg">
-
+<body class= "woodbg">
+    <header>
+    <!--    <div class  ="header-main homepage-02 header-fixed">
+            <div class="container">
+                ::before
+                    <div class="header-main-wrapper">
+                        <div class="navbar-heade">
+                            <button type="button" data-toggle="collapse" data-target=".navigation" class="navbar-toggle edugate-navbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <nav class = "">
+        -->
     <div class="smart-wrap">
-        <div class="smart-forms smart-container wrap-3">
+        <div class="smart-forms smart-container wrap-2">
 
-            <div class="form-header header-green">
-                <h4><i class="fa fa-pencil-square"></i>Become a student @ QuarkMe</h4>
+            <div style="background-color:#337ab7;color:white;padding:5px;font-size:150%;" align="center" class="smart-forms-header smart-header wrap-3""form-header header-green">
+                <h4><i class="fa fa-pencil-square fa-align-center"></i>Student Sign Up </h4>
             </div>
-
-
             <form method="post" action="http://quarkme.com/register-student" id="account">
-                <div class="form-body theme-green">
+                <div class="form-body theme-green" style="color:white">
 
                     <p> Hey! </br> To learn with us, just fill out this form. </p>
                     <label for="names" class="field-label">Your name</label>
-                    <div class="frm-row">
+            
+
+                <div class="frm-row">
 
                         <div class="section colm colm6">
                             <label class="field prepend-icon">
@@ -267,9 +283,24 @@
                             </label>
                         </div>
 
+
+                 </div>
+
+            
+                    <div class="section">
+                        <label for="username" class="field-label">Enter your email id (to be used as your username) </label>
+                        <div class="smart-widget sm-right smr-120">
+                            <label class="field prepend-icon">
+                                <input type="text" name="username" id="username" class="gui-input" placeholder="quarkme-tutor@example.com">
+                                <span class="field-icon"><i class="fa fa-user"></i></span>
+                            </label>
+
+                        </div>
+
                     </div>
 
-                    <div class="section">
+                <div class="frm-row">
+                    <div class="section colm colm6">
                         <label for="password" class="field-label">Create a password</label>
                         <label class="field prepend-icon">
                             <input type="password" name="password" id="password" class="gui-input">
@@ -277,36 +308,29 @@
                         </label>
                     </div>
 
-                    <div class="section">
+
+                    <div class="section colm colm6">
                         <label for="repeatPassword" class="field-label">Confirm your password</label>
                         <label class="field prepend-icon">
                             <input type="password" name="repeatPassword" id="repeatPassword" class="gui-input">
                             <span class="field-icon"><i class="fa fa-unlock-alt"></i></span>
                         </label>
                     </div>
-
-
-                    <div class="section">
-                        <label for="email" class="field-label">Your email address</label>
-                        <label class="field prepend-icon">
-                            <input type="email" name="email" id="email" class="gui-input" placeholder="example@domain.com...">
-                            <span class="field-icon"><i class="fa fa-envelope"></i></span>
-                        </label>
-                    </div>
-
-                    <div class="section">
+                </div>
+                
+                <div class="frm-row">
+                     <div class="section colm colm6">
                     <label for="comment" class="field-label">Area/Locality, City
                             </label>
                             <label class="field prepend-icon">
 
-                                <textarea class="gui-textarea" id="Details" name="Details" placeholder="Text area"></textarea>
+                                <textarea class="gui-textarea" id="Locality" name="Locality" placeholder="Text area"></textarea>
                                 <span class="field-icon"><i class="fa fa-comments"></i></span>
                                 
                             </label>
-                            </div>
+                    </div>
 
-
-                     <div class="section">
+                     <div class="section colm colm6">
                     <label for="phonenumber" class="field-label"> Phone Number
                             </label>
                             <label class="field prepend-icon">
@@ -315,10 +339,12 @@
                                 <span class="field-icon"><i class="fa fa-comments"></i></span>
                                 
                             </label>
-
-                     </div>
+                    </div>
+                </div>
+                    
                     <div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false"></div>
                     <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    
                     <style>
                         #map {
                             height: 100%;
@@ -344,7 +370,7 @@
                         }
                         #address {
                             border: 1px solid #000090;
-                            background-color: #f0f0ff;
+                            background-color: #33f4ee;
                             width: 380px;
                             padding-right: 2px;
                         }
@@ -366,21 +392,11 @@
                         }
                     </style>
 
-                    </br>
-                    </br>
-
-                    
-                    <div class="section">
-
-                        <label for="verify" class="field-label">Prove you're not a robot - </label>
-                        </br>
-
-
-
-                        <div class="g-recaptcha" data-sitekey="6LeMjBAUAAAAAGP3fPcb0CHO3eiQKd8XajY_i-F6"></div>
-
+                        <div class="section">
+                    <label for="verify" class="field-label"><br><br><br><br>Prove you're not a robot - </label>
+                    <br>
+                    <div class="g-recaptcha" data-sitekey="6LeMjBAUAAAAAGP3fPcb0CHO3eiQKd8XajY_i-F6"></div>
                     </div>
-
 
                     <div class="section">
                         <div class="option-group field">
@@ -390,20 +406,19 @@
                             </label>
                         </div>
                     </div>
-
                 </div>
+           
                 <div class="form-footer">
-                    <button type="submit" class="button btn-green">Create Account</button>
-                </div>
-
+                       <button type="submit" onclick="clicked();" class="button btn-green">Create Account</button>
+                    </div>
             </form>
-
+            
         </div>
 
     </div>
 
 
-    <script src="conditionize.jquery.js"></script>
+    <script src="{% static 'js/conditionize.jquery.js' %}"></script>
     <script>
         $('.conditional').conditionize();
     </script>
