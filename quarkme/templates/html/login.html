@@ -56,6 +56,8 @@
                         <div class="container">
                             <div class="login-wrapper rlp-wrapper">
                                 <div class="login-table rlp-table">
+                                <form method="post" action="{% url 'login' %}">
+                                {% csrf_token %}
                                     <!--- <a href="index.html"><img src="assets/images/logo-color-1.png" alt="" class="login"/></a> !--->
 
                                     <div class="login-title rlp-title">login to your quarkme account!</div>
@@ -64,23 +66,25 @@
                                             <div class="col-md-12">
                                                 <label for="regemail" class="control-label form-label">username <span class="highlight">*</span>
                                                 </label>
-                                                <input id="regemail" type="email" placeholder="" class="form-control form-input" />
+                                                <input id="regemail" name="username" type="text" placeholder="" class="form-control form-input" />
                                                 <!--p.help-block Warning !-->
                                             </div>
                                             <div class="col-md-12">
                                                 <label for="regpassword" class="control-label form-label">password <span class="highlight">*</span>
                                                 </label>
-                                                <input id="regpassword" type="password" placeholder="" class="form-control form-input" />
+                                                <input id="regpassword" name="password" type="password" placeholder="" class="form-control form-input" />
                                                 <!-- p.help-block Warning !-->
                                             </div>
                                         </div>
                                     </div>
                                     <div class="login-submit">
-                                        <button type="submit" onclick="clicked();" class="btn btn-login btn-green"><span>sign in</span>
+                                        <button type="submit" href="{% url 'login' %}" class="btn btn-login btn-green"><span>sign in</span>
                                             <!-- <button type="submit" onclick="window.location.href='index.html'" class="btn btn-login btn-green"><span>sign in</span> -->
                                         </button>
                                     </div>
+                                    </form>
                                 </div>
+
                             </div>
                         </div>
                     </div>
