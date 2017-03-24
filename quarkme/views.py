@@ -7,6 +7,16 @@ from . import utils
 
 # Create your views here.
 def home(request):
+    user = utils.get_login_user(request.COOKIES)
+    errors = []
+    if user:
+        context = {
+            'user': user
+        }
+        res = redirect('/')
+        request.session['username'] = username
+        res.set_cookie(key='username', value=username, expires=0)
+        return res
     return render(request, 'html/index.html')
 
 
@@ -41,7 +51,10 @@ def login(request):
         context = {
             'user': user
         }
-        return render(request, 'html/index.html', context)
+        res = redirect('/')
+        request.session['username'] = username
+        res.set_cookie(key='username', value=username, expires=0)
+        return res
     if request.method == 'POST':
         username = request.POST.get('username')
         password = request.POST.get('password')
