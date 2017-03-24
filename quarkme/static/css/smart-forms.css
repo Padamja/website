@@ -22,7 +22,7 @@ html, body{
 /* @backgrounds :: modify or add yours below 
 ------------------------------------------------------------------- */
 .darkbg{ background:#6C82A2 url(../images/dark.png) repeat fixed; }
-.woodbg{ background:#E6CCA6 url(../images/wood.png) repeat fixed; }
+.woodbg{ background:#E6CCA6 url(../images/bg.jpg) repeat fixed; }
 
 /* @form wrappers 
 ---------------------------------- */
