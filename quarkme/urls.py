@@ -12,4 +12,5 @@ urlpatterns = [
     url(r'^student-registration/?$', views.streg),
     url(r'^tutor-registration/?$', views.tereg),
     url(r'^/?$', views.home),
+    url(r'^logout/?$', views.logout)
 ]

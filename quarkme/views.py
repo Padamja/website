@@ -53,16 +53,15 @@ def login(request):
                 context = {
                     'user': user
                 }
-                print("err1")
-                return render(request, 'html/index.html', context)
+                res = redirect('/')
+                request.session['username'] = username
+                res.set_cookie(key='username', value=username, expires=0)
+                return res
             else:
-                print("err2")
                 errors.append("wrong password")
         else:
-            print("err2")
             errors.append("no such user found")
 
-    print("err4")
     return render(request, 'html/login.html', context={
         'user': None,
         'errors': errors
@@ -70,6 +69,13 @@ def login(request):
 
 
     return render(request, 'html/login.html')
+
+
+def logout(request):
+    res = redirect('/')
+    request.session['username'] = ''
+    res.set_cookie(key='username', value='', expires=0)
+    return res
 
 
 def streg(request):

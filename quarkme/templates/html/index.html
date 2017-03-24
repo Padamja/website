@@ -21,7 +21,11 @@ QuarkMe | Home
                         <ul class="nav-links nav navbar-nav">
                             <li><a href="javascript:void(0)" class="main-menu">Home</a></li>
                             <li><a href="about" class="main-menu">About</a></li>
+                            {% if request.session.username %}
+                            <li><a href="logout" class="main-menu">{{ request.session.username }}</a></li>
+                            {% else %}
                             <li><a href="login" class="main-menu">Login</a></li>
+                            {% endif %}
                             <li><a href="student-registration" class="main-menu">Student Registration</a></li>
                             <li><a href="tutor-registration" class="main-menu">Become a Tutor</a></li>
                             <li><a href="faq" class="main-menu">FAQ</a></li>
