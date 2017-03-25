@@ -20,7 +20,7 @@
     <script type="text/javascript" src="{% static 'js/jquery.validate.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/additional-methods.min.js' %}"></script>
 
-    <!--[if lte IE 9]>   
+    <!--[if lte IE 9]>
         <script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
     <![endif]-->
 
@@ -31,7 +31,7 @@
     <script type="text/javascript">
         $(function() {
 
-            /* @custom validation method (smartCaptcha) 
+            /* @custom validation method (smartCaptcha)
                 ------------------------------------------------------------------ */
 
             $.validator.methods.smartCaptcha =
@@ -44,14 +44,14 @@
 
             $("#account").validate({
 
-                /* @validation states + elements 
+                /* @validation states + elements
                         ------------------------------------------- */
 
                 errorClass: "state-error",
                 validClass: "state-success",
                 errorElement: "em",
 
-                /* @validation rules 
+                /* @validation rules
                         ------------------------------------------ */
 
                 rules: {
@@ -141,7 +141,7 @@
 
                 },
 
-                /* @validation error messages 
+                /* @validation error messages
                         ---------------------------------------------- */
 
                 messages: {
@@ -210,7 +210,7 @@
 
                 },
 
-                /* @validation highlighting + error placement  
+                /* @validation highlighting + error placement
                         ---------------------------------------------------- */
 
                 highlight: function(
@@ -286,6 +286,19 @@
         });
     </script>
 
+    <script>
+    function auto_promocode()
+    {
+      if(document.getElementById('promocodecheck').checked )
+      document.getElementById('promocode').value= "QME";
+      else {
+        document.getElementById('promocode').value= " ";
+      }
+    }
+    </script>
+
+
+
     <script type="text/javascript">
         function clicked() {
             alert('Thanks for signing up!');
@@ -296,7 +309,7 @@
 
 
     <!--[if lte IE 9]>
-        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>    
+        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
         <script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
     <![endif]-->
 
@@ -306,17 +319,17 @@
 
 </head>
 
-<body 
+<body
 
 class="woodbg">
 
     <div class="smart-wrap">
         <div class="smart-forms smart-container wrap-2 ">
-            
+
             <div style="background-color:#337ab7;color:white;padding:5px;font-size:150%;" align="center" class="smart-forms-header smart-header wrap-3""form-header header-green">
                 <h4><i class="fa fa-pencil-square fa-align-center"></i>Tutor Sign Up </h4>
             </div>
-            
+
 
 
             <form method="post" action="http://quarkme.com/register-tutor" id="account">
@@ -344,7 +357,7 @@ class="woodbg">
 
                     </div>
 
-            
+
                     <div class="section">
                         <label for="username" class="field-label">Enter your email id (to be used as your username) </label>
                         <div class="smart-widget sm-right smr-120">
@@ -375,7 +388,7 @@ class="woodbg">
                         </label>
                     </div>
                 </div>
-                
+
                 <div class="frm-row">
                      <div class="section colm colm6">
                     <label for="comment" class="field-label">Area/Locality, City
@@ -384,7 +397,7 @@ class="woodbg">
 
                                 <textarea class="gui-textarea" id="Locality" name="Locality" placeholder="Text area"></textarea>
                                 <span class="field-icon"><i class="fa fa-comments"></i></span>
-                                
+
                             </label>
                     </div>
 
@@ -395,7 +408,7 @@ class="woodbg">
 
                                 <input type="tel" name="phonenumber" id="phonenumber" class="gui-input">
                                 <span class="field-icon"><i class="fa fa-comments"></i></span>
-                                
+
                             </label>
                     </div>
                 </div>
@@ -406,10 +419,36 @@ class="woodbg">
 
                                 <textarea class="gui-textarea" id="Details" name="Details" placeholder="Text area"></textarea>
                                 <span class="field-icon"><i class="fa fa-comments"></i></span>
-                                
+
                             </label>
                     </div>
-                    
+
+                    <div class="section colm colm6">
+
+                           <label class="field prepend-icon">
+
+                             <input type="checkbox" name="promocodecheck" id="promocodecheck" onclick="auto_promocode()"  value="promocoecheck"> Refer Someone? Get a discount!<br>
+
+
+
+                           </label>
+                   </div>
+
+
+
+                    <div class="section colm colm6">
+                    <label for="promocode" class="field-label"> Enter Promo Code
+                            </label>
+                            <label class="field prepend-icon">
+
+                                <input type="text" name="promocode" id="promocode" pattern="[A-ZA-ZA-Z0-9]{13}"  class="gui-input">
+                                <span class="field-icon"><i class="fa fa-comments"></i></span>
+
+                            </label>
+                    </div>
+
+
+
                     <div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false"></div>
                     <div class="g-signin2" data-onsuccess="onSignIn"></div>
                     <style>
@@ -417,7 +456,7 @@ class="woodbg">
                             height: 100%;
                         }
                     </style>
-                    
+
                    <div class="section">
                     <label for="verify" class="field-label"><br><br><br><br>Prove you're not a robot - </label>
                     <br>
@@ -434,7 +473,7 @@ class="woodbg">
                     </div>
                     </div>
 
-                     
+
 
 
 
@@ -453,7 +492,7 @@ class="woodbg">
 } else if ((Cookies.get('color-skin') == undefined) || (Cookies.get('color-skin') == 'color-1')) {
     $('.logo .header-logo img').attr('src', "{% static 'images/logo-color-12.png' %}" );
 }</script>
-    
+
     <script src="{% static 'js/conditionize.jquery.js' %}"></script>
 
     <script>

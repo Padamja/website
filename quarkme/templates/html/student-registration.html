@@ -19,7 +19,7 @@
     <script type="text/javascript" src="{% static 'js/jquery.validate.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/additional-methods.min.js' %}"></script>
 
-    <!--[if lte IE 9]>   
+    <!--[if lte IE 9]>
         <script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
     <![endif]-->
 
@@ -30,7 +30,7 @@
     <script type="text/javascript">
         $(function() {
 
-            /* @custom validation method (smartCaptcha) 
+            /* @custom validation method (smartCaptcha)
                 ------------------------------------------------------------------ */
 
             $.validator.methods.smartCaptcha = function(value, element, param) {
@@ -39,14 +39,14 @@
 
             $("#account").validate({
 
-                /* @validation states + elements 
+                /* @validation states + elements
                         ------------------------------------------- */
 
                 errorClass: "state-error",
                 validClass: "state-success",
                 errorElement: "em",
 
-                /* @validation rules 
+                /* @validation rules
                         ------------------------------------------ */
 
                 rules: {
@@ -129,7 +129,7 @@
 
                 },
 
-                /* @validation error messages 
+                /* @validation error messages
                         ---------------------------------------------- */
 
                 messages: {
@@ -198,7 +198,7 @@
 
                 },
 
-                /* @validation highlighting + error placement  
+                /* @validation highlighting + error placement
                         ---------------------------------------------------- */
 
                 highlight: function(element, errorClass, validClass) {
@@ -219,6 +219,34 @@
 
         });
     </script>
+
+<!--
+    <script>
+
+       $(document).ready(function() {
+    $('.phonenumber').on('change', function() {
+      $('.promocode').val($(this).val());
+    });
+   });
+
+     </script>
+ -->
+
+<script>
+function auto_promocode()
+{
+  if(document.getElementById('promocodecheck').checked)
+  document.getElementById('promocode').value= "QME";
+  else {
+    document.getElementById('promocode').value= " ";
+  }
+}
+</script>
+
+
+</script>
+
+
     <script type="text/javascript">
         function clicked() {
             alert('Thanks for signing up!');
@@ -229,7 +257,7 @@
 
 
     <!--[if lte IE 9]>
-        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>    
+        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
         <script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
     <![endif]-->
 
@@ -257,6 +285,7 @@
         <div class="smart-forms smart-container wrap-2">
 
             <div style="background-color:#337ab7;color:white;padding:5px;font-size:150%;" align="center" class="smart-forms-header smart-header wrap-3""form-header header-green">
+                <img src="/quarkme/static/images/logo-color-1.png" alt="QuarkMe" >
                 <h4><i class="fa fa-pencil-square fa-align-center"></i>Student Sign Up </h4>
             </div>
             <form method="post" action="http://quarkme.com/register-student" id="account">
@@ -264,7 +293,7 @@
 
                     <p> Hey! </br> To learn with us, just fill out this form. </p>
                     <label for="names" class="field-label">Your name</label>
-            
+
 
                 <div class="frm-row">
 
@@ -286,7 +315,7 @@
 
                  </div>
 
-            
+
                     <div class="section">
                         <label for="username" class="field-label">Enter your email id (to be used as your username) </label>
                         <div class="smart-widget sm-right smr-120">
@@ -317,7 +346,7 @@
                         </label>
                     </div>
                 </div>
-                
+
                 <div class="frm-row">
                      <div class="section colm colm6">
                     <label for="comment" class="field-label">Area/Locality, City
@@ -326,7 +355,7 @@
 
                                 <textarea class="gui-textarea" id="Locality" name="Locality" placeholder="Text area"></textarea>
                                 <span class="field-icon"><i class="fa fa-comments"></i></span>
-                                
+
                             </label>
                     </div>
 
@@ -337,27 +366,40 @@
 
                                 <input type="tel" name="phonenumber" id="phonenumber" class="gui-input">
                                 <span class="field-icon"><i class="fa fa-comments"></i></span>
-                                
+
                             </label>
                     </div>
+
+                    <div class="section colm colm6">
+
+                           <label class="field prepend-icon">
+
+                             <input type="checkbox" name="promocodecheck" id="promocodecheck" onclick="auto_promocode()" value="promocoecheck"> Refer Someone? Get a discount!<br>
+
+
+
+                           </label>
+                   </div>
+
+
 
                     <div class="section colm colm6">
                     <label for="promocode" class="field-label"> Enter Promo Code
                             </label>
                             <label class="field prepend-icon">
 
-                                <input type="text" name="promocode" id="promocode" class="gui-input">
+                                <input type="text" name="promocode" id="promocode"  class="gui-input">
                                 <span class="field-icon"><i class="fa fa-comments"></i></span>
-                                
+
                             </label>
-                    </div>	
+                    </div>
 
 
                 </div>
-                    
+
                     <div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false"></div>
                     <div class="g-signin2" data-onsuccess="onSignIn"></div>
-    
+
                     <style>
                         #map {
                             height: 100%;
@@ -420,21 +462,27 @@
                         </div>
                     </div>
                 </div>
-           
+
                 <div class="form-footer">
                        <button type="submit" onclick="clicked();" class="button btn-green">Create Account</button>
                     </div>
             </form>
-            
+
         </div>
 
     </div>
+
+
 
 
     <script src="{% static 'js/conditionize.jquery.js' %}"></script>
     <script>
         $('.conditional').conditionize();
     </script>
+
+
+
+
 </body>
 
 </html>
