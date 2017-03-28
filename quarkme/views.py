@@ -97,3 +97,6 @@ def streg(request):
 
 def tereg(request):
     return render(request, 'html/tutor-registration.html')
+
+def dashboard(request):
+    return render(request, 'html/dashboard.html')
